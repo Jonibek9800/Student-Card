@@ -1,0 +1,346 @@
+.container{
+    margin: 10px auto ;
+    width: 1000px;
+
+}
+.title {
+    color: rgb(82, 80, 80);
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.8em;
+}
+
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 60px 40px 400px;
+    margin: 0 auto;
+    width: 100%;
+}
+.header__title {
+    grid-row: 1 / 1 ;
+    grid-column: 1 / 12;
+}
+
+.header__avatar {
+    background: url(../img/Avatar.jpg) no-repeat center/ cover;
+    grid-column: 2 / 4;
+    grid-row: 3;
+    height: 300px;
+    width: 250px;
+}
+
+.header__avatar_photo{
+    height: auto;
+    width: 300px;
+}
+
+.header__content {
+    grid-column: 5 / 12;
+    grid-row: 3;
+}
+
+/*---------Section-----------*/
+
+.section {
+    margin: 0 auto;
+    width: 100%;
+}
+.section__learning {
+    border: solid 1px dimgrey;
+    margin-bottom: 15px;
+}
+/*-----Мои цели на обучение-----*/
+.learning_objectives {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 15px 50px 150px;
+}
+.learning_objectives_title {
+    grid-column: 1 / 12;
+    grid-row: 2;
+}
+.learning_objectives_item {
+    grid-column: 2 / 12;
+    grid-row: 3;
+}
+.item_text {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/*-----Сколько времени смогу учиться-----*/
+.studying__time {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 20px 50px 350px;
+}
+.studying__time_title {
+    grid-column: 1 / 12;
+    grid-row: 2;
+}
+.table_item {
+    grid-column: 4 / 9;
+    grid-row: 3;
+    height: 330px;
+    width: 100%;
+}
+.table__item_row {
+    font-size: 18px;
+}
+
+/*-----Мои пройденные курсы-----*/
+th {
+    border-bottom: 1px solid #9c8881;
+    }
+
+.completed__courses {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 20px 50px 200px;
+}
+.completed__courses_title {
+    grid-column: 1 / 12;
+    grid-row: 2;
+}
+
+.complated__table_item {
+    grid-column: 4 / 10;
+    grid-row: 3;
+}
+.item {
+    
+}
+.table_item_row {
+    text-align: center;
+    font-size: 18px;
+}
+
+/*---------------footer--------------*/
+.footer {
+    border: solid 1px dimgrey;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 20px 50px 150px;
+    width: 100%;
+}
+.footer__title {
+    grid-column: 1 / 12;
+    grid-row: 2;
+}
+.footer__link {
+    color: grey;
+    grid-column: 2 / 11;
+    grid-row: 3 / 3;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.instagram_link{
+    cursor: pointer;
+    grid-column: 3 / 5;
+    height: 70px;
+    width: 50px;
+}
+.telegram_link{
+    cursor: pointer;
+    grid-column: 6 / 8;
+    height: 70px;
+    width: 50px;
+}
+.github_link{
+    cursor: pointer;
+    grid-column: 9 / 11;
+    height: 70px;
+    width: 59px;
+}
+
+.footer__link:hover{
+    background-color: rgb(229, 241, 241);
+    color: maroon;
+    text-decoration: underline;
+    transition: 3s;
+}
+
+.instagram {
+    background: url(../img/instagram-icon.png) no-repeat top / cover;
+    height: 50px;
+    width: 50px;
+}
+.footer__link_paragraph {
+    font-size: 18px;
+}
+.telegram {
+    background: url(../img/telegram-icon.png) no-repeat top / cover;
+    height: 50px;
+    width: 50px;
+}
+.git-hub {
+    background: url(../img/icon-github.png) no-repeat top / cover;
+    height: 50px;
+    width: 50px;
+}
+
+
+
+
+
+@media (max-width: 768px){
+    .container{
+        margin: 0 auto ;
+        max-width: 765px;
+    
+    }
+    .title {
+        font-size: 1.5em;
+    }
+        
+    
+    /*---------Section-----------*/
+    
+    .complated__table_item {
+        grid-column: 2 / 12;
+        }
+        
+
+    /*-----Мои цели на обучение-----*/
+    
+    
+    .item_text {
+        font-size: 18px;
+    }
+    
+    /*-----Сколько времени смогу учиться-----*/
+    
+    
+    /*-----Мои пройденные курсы-----*/
+    
+    
+    .table_item_row {
+        font-size: 18px;
+    }
+    
+    /*---------------footer--------------*/
+       
+    .instagram_link{
+        height: 35px;
+        width: 35px;
+    }
+    .telegram_link{
+        height: 35px;
+        width: 35px;
+    }
+    .github_link{
+        height: 40px;
+        width: 50px;
+    }
+    
+    .instagram {
+        height: 35px;
+        width: 35px;
+    }
+    .footer__link_paragraph {
+        font-size: 15px;
+    }
+    .telegram {
+        height: 35px;
+        width: 35px;
+    }
+    .git-hub {
+        height: 35px;
+        width: 35px;
+    }   
+}
+
+@media (max-width: 508px){
+    *{
+        margin: 5px;
+        padding: 0; 
+    }
+    .container{
+        margin: 0 auto ;
+        max-width: 500px;   
+    }
+
+    .title {
+        font-size: 1.2em;
+    }
+   /*header*/     
+   .header {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 50px 10px 350px 225px;
+        width: 100%;
+    }
+    .header__content{
+        grid-column: 1 / 12;
+        grid-row: 4;
+        font-size: 13px;
+    }
+
+    .header__avatar{
+        grid-column: 3 / 12;
+        height: 330px;
+        width: 300px;
+    }
+
+    /*---------Section-----------*/
+    .item_text {
+        font-size: 16px;
+    }
+
+    /*-----Мои цели на обучение-----*/
+    
+    
+    /*-----Сколько времени смогу учиться-----*/
+
+    .table_item {
+        grid-column: 2 / 12;
+    }
+    .complated__table_item {
+        grid-column: 2 / 12;
+    }
+    /*-----Мои пройденные курсы-----*/
+    
+    
+    .table_item_row {
+        font-size: 18px;
+    }
+    
+    /*---------------footer--------------*/
+       
+    .instagram_link{
+        height: 35px;
+        width: 45px;
+        grid-column: 3 / 5;
+    }
+    .telegram_link{
+        height: 35px;
+        width: 35px;
+        grid-column: 6 / 8;
+    }
+    .github_link{
+        height: 40px;
+        width: 50px;
+        grid-column: 9 / 11;
+    }
+    
+    .instagram {
+        height: 35px;
+        width: 35px;
+    }
+    .footer__link_paragraph {
+        font-size: 12px;
+    }
+    .telegram {
+        height: 35px;
+        width: 35px;
+    }
+    .git-hub {
+        height: 35px;
+        width: 35px;
+    }   
+}
